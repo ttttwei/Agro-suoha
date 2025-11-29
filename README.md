@@ -70,18 +70,6 @@
 作者保留随时更新本免责声明的权利，且不另行通知。最新版本的免责声明将发布在本项目的 GitHub 页面上。
 ## 💻 一键安装 (Quick Start)
 
-**根据菜单选择模式**
-
-1 梭哈模式（无需cloudflare域名重启会失效！）
-2 安装服务（需要cloudflare域名重启不会失效！）
-3 卸载服务
-4 清理缓存
-5 管理服务
-0.退出脚本
-
-服务安装完成,管理服务请运行命令 suoha。
-也可在输出的 v2ray.txt 查看 VMess/VLESS 配置信息。
-
 在您的 VPS 终端中执行以下命令即可（支持 Debian / Ubuntu / CentOS / Alpine）：
 
 **方式一：短链接（推荐）**
@@ -94,12 +82,12 @@ bash <(curl -sL [https://raw.githubusercontent.com/ttttwei/Agro-suoha/main/suoha
 ```
 **根据菜单选择模式**
 
-1 梭哈模式（无需cloudflare域名重启会失效！）
-2 安装服务（需要cloudflare域名重启不会失效！）
-3 卸载服务
-4 清理缓存
-5 管理服务
-0.退出脚本
+* **1 梭哈模式（无需cloudflare域名重启会失效！）**
+* **2 安装服务（需要cloudflare域名重启不会失效！）**
+* **3 卸载服务**
+* **4 清理缓存**
+* **5 管理服务**
+* **0.退出脚本**
 
 服务安装完成,管理服务请运行命令 suoha。
 也可在输出的 v2ray.txt 查看 VMess/VLESS 配置信息。
