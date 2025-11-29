@@ -648,8 +648,8 @@ echo 首次绑定ARGO隧道固定服务后如果不想再次跳转网页绑定
 echo 将已经绑定的系统目录下的 /root/.cloudflared 文件夹以及内容
 echo 拷贝至新系统下同样的目录,会自动跳过登录验证
 
-echo -e "基于 Cloudflare Tunnel 的新一代超轻量级穿透工具"
-echo -e "无需公网 IP | 无需端口转发 | 极致隐藏 | 专为 NAT VPS 打造"
+echo -e 基于 Cloudflare Tunnel 的新一代超轻量级穿透工具
+echo -e 无需公网IP 无需端口转发 极致隐藏  专为 NAT VPS 打造
 
 echo -e 注意：梭哈模式重启服务器后ARGO临时隧道失效！！！
 
@@ -796,4 +796,5 @@ else
 fi
 
     
+
 
