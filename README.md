@@ -30,24 +30,17 @@
 * **🛠 多协议支持**：灵活选择 **VMess** 或 **VLESS** 协议，满足不同客户端需求。
 * **🌍 全架构兼容**：完美支持 `x86_64` (AMD64), `arm64` (Mac M1/VPS), `armv7` 等多种 CPU 架构。
 * **🚀 智能优选**：内置 Argo 隧道优选逻辑，自动寻找最佳 Cloudflare 接入点。
-📌 功能特点
-
-梭哈模式（临时 Tunnel）
-
+* 
+## 📌 功能特点
+* **🚀梭哈模式（临时 Tunnel）**
 不需要自己提供域名
-
 重启服务器后临时隧道失效，需要重新运行
 
-服务模式（固定 Tunnel）
-
+* **🚀服务模式（固定 Tunnel）**
 需要 CF 托管域名并绑定 Argo 隧道
-
 重启后仍然保持服务运行
-
 自动优选 CF Argo 节点
-
 支持 VMess 和 VLESS 协议
-
 无需公网 IP，无需端口转发，极致隐藏
 
 ---
@@ -87,3 +80,14 @@ bash <(curl -sL suoha.ggff.net | tr -d '\r')
 ```bash
 bash <(curl -sL [https://raw.githubusercontent.com/ttttwei/Agro-suoha/main/suoha.sh](https://raw.githubusercontent.com/ttttwei/Agro-suoha/main/suoha.sh) | tr -d '\r')
 ```
+**根据菜单选择模式**
+
+1 梭哈模式（无需cloudflare域名重启会失效！）
+2 安装服务（需要cloudflare域名重启不会失效！）
+3 卸载服务
+4 清理缓存
+5 管理服务
+0.退出脚本
+
+服务安装完成,管理服务请运行命令 suoha。
+也可在输出的 v2ray.txt 查看 VMess/VLESS 配置信息。
