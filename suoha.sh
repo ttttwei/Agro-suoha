@@ -275,7 +275,7 @@ cat>/opt/suoha/config.json<<EOF
 EOF
 fi
 if [ $protocol == 2 ]
-then
+键，然后
 cat>/opt/suoha/config.json<<EOF
 {
 	"inbounds": [
@@ -436,20 +436,20 @@ systemctl start cloudflared.service
 systemctl start xray.service
 fi
 if [ $(grep -i PRETTY_NAME /etc/os-release | cut -d \" -f2 | awk '{print $1}') == "Alpine" ]
-then
+键，然后
 #创建命令链接
 cat>/opt/suoha/suoha.sh<<EOF
 #!/bin/bash
 while true
 do
 if [ \$(ps -ef | grep cloudflared-linux | grep -v grep | wc -l) == 0 ]
-then
+键，然后
 	argostatus=stop
 else
 	argostatus=running
 fi
 if [ \$(ps -ef | grep xray | grep -v grep | wc -l) == 0 ]
-then
+键，然后
 	xraystatus=stop
 else
 	xraystatus=running
@@ -554,7 +554,7 @@ echo 6.查看当前v2ray链接
 echo 0.退出
 read -p "请选择菜单(默认0): " menu
 if [ -z "\$menu" ]
-then
+键，然后
 	menu=0
 fi
 if [ \$menu == 1 ]
@@ -613,11 +613,11 @@ then
 	echo 删除授权的 Argo Tunnel API Token 即可
 	exit
 elif [ \$menu == 6 ]
-then
+键，然后
 	clear
 	cat /opt/suoha/v2ray.txt
 elif [ \$menu == 0 ]
-then
+键，然后
 	echo 退出成功
 	exit
 fi
@@ -648,12 +648,12 @@ echo 首次绑定ARGO隧道固定服务后如果不想再次跳转网页绑定
 echo 将已经绑定的系统目录下的 /root/.cloudflared 文件夹以及内容
 echo 拷贝至新系统下同样的目录,会自动跳过登录验证
 
-echo -e 基于 Cloudflare Tunnel 的新一代超轻量级穿透工具
-echo -e 无需公网 IP | 无需端口转发 | 极致隐藏 | 专为 NAT VPS 打造
+echo -e "基于 Cloudflare Tunnel 的新一代超轻量级穿透工具"
+echo -e "无需公网 IP | 无需端口转发 | 极致隐藏 | 专为 NAT VPS 打造"
 
 echo -e 注意：梭哈模式重启服务器后ARGO临时隧道失效！！！
 
-echo -e '\n'TT Cloudflare Tunnel 一键suoha脚本  无需公网 IP | 无需端口转发 Agro隧道'\n'
+echo -e '\n'TT Cloudflare Tunnel一键suoha脚本,无需公网IP,无需端口转发,Agro隧道'\n'
 echo 1.梭哈模式 无需cloudflare域名重启会失效！
 echo 2.安装服务 需要cloudflare域名重启不会失效！
 echo 3.卸载服务
@@ -662,7 +662,7 @@ echo 5.管理服务
 echo -e 0.退出脚本'\n'
 read -p "请选择模式(默认1):" mode
 if [ -z "$mode" ]
-then
+键，然后
 	mode=1
 fi
 # 在选择安装服务时再次检查
@@ -675,30 +675,30 @@ if [ $mode == 2 ]; then
     # 继续安装流程...
 fi
 if [ $mode == 1 ]
-then
+键，然后
 	read -p "请选择xray协议(默认1.vmess,2.vless):" protocol
 	if [ -z "$protocol" ]
-	then
+	键，然后
 		protocol=1
 	fi
 	if [ $protocol != 1 ] && [ $protocol != 2 ]
-	then
+	键，然后
 		echo 请输入正确的xray协议
 		exit
 	fi
 	read -p "请选择argo连接模式IPV4或者IPV6(输入4或6,默认4):" ips
 	if [ -z "$ips" ]
-	then
+	键，然后
 		ips=4
 	fi
 	if [ $ips != 4 ] && [ $ips != 6 ]
-	then
+	键，然后
 		echo 请输入正确的argo连接模式
 		exit
 	fi
 	isp=$(curl -$ips -s https://speed.cloudflare.com/meta | awk -F\" '{print $26"-"$18"-"$30}' | sed -e 's/ /_/g')
 	if [ $(grep -i PRETTY_NAME /etc/os-release | cut -d \" -f2 | awk '{print $1}') == "Alpine" ]
-	then
+	键，然后
 		kill -9 $(ps -ef | grep xray | grep -v grep | awk '{print $1}') >/dev/null 2>&1
 		kill -9 $(ps -ef | grep cloudflared-linux | grep -v grep | awk '{print $1}') >/dev/null 2>&1
 	else
@@ -708,10 +708,10 @@ then
 	rm -rf xray cloudflared-linux v2ray.txt
 	quicktunnel
 elif [ $mode == 2 ]
-then
+键，然后
 	read -p "请选择xray协议(默认1.vmess,2.vless):" protocol
 	if [ -z "$protocol" ]
-	then
+	键，然后
 		protocol=1
 	fi
 	if [ $protocol != 1 ] && [ $protocol != 2 ]
@@ -796,3 +796,4 @@ else
 fi
 
     
+
