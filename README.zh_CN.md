@@ -1,11 +1,11 @@
-# Agro-suoha（中文）🌐 语言切换:  
+# Argo-suoha（中文）🌐 语言切换:  
 [English](README.md) | [中文说明](README.zh_CN.md)
 
-# Agro-suoha
+# Argo-suoha
 
 > TT Cloudflare Tunnel 一键suoha脚本  无需公网 IP | 无需端口转发 Argo隧道 | 支持 VMess/VLESS | 自动优选伪装域名
 
-# 🚀 Agro-suoha
+# 🚀 Argo-suoha
 
 > **基于 Cloudflare Tunnel 的新一代轻量级穿透工具**
 >
@@ -20,7 +20,7 @@
 
 ## 📖 项目简介
 
-**Agro-suoha** 是一个基于 Cloudflare Tunnel (Argo) 技术的全自动化一键部署脚本。
+**Argo-suoha** 是一个基于 Cloudflare Tunnel (Argo) 技术的全自动化一键部署脚本。
 
 它旨在解决无公网 IP、防火墙严格或 NAT 机器（如 HAX, IPv6 only VPS）无法对外提供服务的难题。通过建立出站隧道，无需任何端口映射，即可实现从公网到本地服务的安全访问。
 
@@ -54,7 +54,7 @@
 
 ## ⚠️ 免责声明
 
-本免责声明适用于 GitHub 上的 “Agro-suoha” 项目（以下简称“本项目”）。
+本免责声明适用于 GitHub 上的 “Argo-suoha” 项目（以下简称“本项目”）。
 
 ### 用途
 本项目仅供教育、研究和安全测试目的而设计和开发。旨在为安全研究人员、学术界人士及技术爱好者提供一个探索和实践网络通信技术的工具。
@@ -82,7 +82,7 @@ bash <(curl -sL suoha.ggff.net | tr -d '\r')
 ```
 **方式二：GitHub 原始链接（备用）**
 ```bash
-bash <(curl -sL [https://raw.githubusercontent.com/ttttwei/Agro-suoha/main/suoha.sh](https://raw.githubusercontent.com/ttttwei/Agro-suoha/main/suoha.sh) | tr -d '\r')
+bash <(curl -sL [https://raw.githubusercontent.com/ttttwei/Argo-suoha/main/suoha.sh](https://raw.githubusercontent.com/ttttwei/Argo-suoha/main/suoha.sh) | tr -d '\r')
 ```
 **📌根据菜单选择模式**
 
